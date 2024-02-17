@@ -1,0 +1,75 @@
+
+
+.form-container {
+    /*For entire form inout standards */
+    width: 90%;
+    max-width: none;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #fefefe;
+    border: 1px solid #eeeeec;
+    
+}
+
+form label {
+    font-size: 1.2em;
+    font-weight: bold;
+    /*display: block;*/
+    padding: 10px 0;
+    width: 90%;
+    margin-left:10px;
+}
+
+form input#name,
+form input#email,
+form input#subject {
+  
+    font-size: 1.1em;
+    height:50px;
+}
+
+form textarea#message {
+    height: 189px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+form input#submit {
+    display: block;
+/*    padding: 10px;
+    font-weight: bold;*/
+    text-align: center;
+    margin-bottom:50px;
+    width:90%;
+    max-width:none;
+    height:50px;
+
+    margin-left:10px;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+    background-color:black;
+    color:white;
+    font-family:Bahnschrift;
+    border:none;
+    
+}
+
+    form input#submit:hover {
+        cursor: pointer;
+        border: 1px solid #c1c1c1;
+        background-color: #dbdbdb;
+
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbdbdb), color-stop(100%, #cccccc));
+        background-image: -webkit-linear-gradient(top, #dbdbdb, #cccccc);
+        background-image: -moz-linear-gradient(top, #dbdbdb, #cccccc);
+        background-image: -ms-linear-gradient(top, #dbdbdb, #cccccc);
+        background-image: -o-linear-gradient(top, #dbdbdb, #cccccc);
+        background-image: linear-gradient(top, #dbdbdb, #cccccc);
+        
+    }
+
+    .flash {
+        background-color: #FBB0B0;
+        padding: 10px;
+        width: 400px;
+    }

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron bg-image text-center " , style="background-image: url({{url_for('static', filename='images/background-index.jpg') }}); background-size:cover; background-repeat: no-repeat ">
+    <div class="container" style="width:50%">
+        <div class="">
+            <h1>Nerdify your Business.</h1>
+            <p>Give your business a boost with a well designed application catered to your needs.</p>
+
+        </div>
+        <p> <a href="contact" class="btn btn-primary btn-Large">LEARN MORE &raquo;</a></p>
+    </div>
+</div>
+        <div class="clearfix"></div>
+
+        <div class=" container text-center catch-phrase">
+            <p>what we believe in</p>
+            <h2> Simplify your business, establish your brand, and decrease your costs.</h2>
+        </div>
+        <hr />
+
+        <div class="container">
+            <!--class to add container-->
+            <div class=" row">
+                <div class="col-lg-7">
+                    <img src="../static/images/who.jpg" style=" height:400px ; width:650px" class="img-thumbnail img-responsive" />
+                </div>
+                <div class="col-lg-5">
+                    <p></p>
+                    <p>about</p>
+                    <h3> Who am I?</h3>
+                    <p>Hello,I am the founder and driving force behind Alpha Nerd. I'm thrilled to welcome you to my corner of the digital world, where technology meets innovation, and ideas come to life.</p>
+                    <p><a href="about" class=" btn btn-info btn-Large">LEARN MORE</a></p>
+                </div>
+            </div>
+            <hr />
+
+
+            <div class="row">
+                <div class=" col-lg-8 col-lg-push-4">
+                    <img src="../static/images/what_wedo2.jpg" style=" height:400px ; width:650px" class="img-thumbnail img-responsive" />
+                </div>
+                <div class="col-lg-4 col-lg-pull-8">
+                    <p></p>
+                    <p>Work</p>
+                    <h3> What we do?</h3>
+                    <p>We provide consultation services to business that need a new novel software approach to make their business more efficient. <p>
+                    <p>Additionally, we thive to provice a working software solution for your needs </p>
+                    <p><a href="work" class=" btn btn-info btn-Large">LEARN MORE</a></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        {% endblock %}

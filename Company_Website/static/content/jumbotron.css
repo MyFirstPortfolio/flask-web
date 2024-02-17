@@ -1,0 +1,156 @@
+body {
+    font-family: 'Lora';
+}   
+
+.jumbotron.bg-image {   
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px; /* Adjust the height as needed */
+    text-align: center;
+    color: #fff; /* Text color for better visibility on the background image */
+    padding: 100px 0; /* Adjust padding as needed */
+    background-position:center
+}
+.jumbotron h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    font-family: 'Roboto Slab';
+}
+
+.jumbotron.bg-image.bglock {
+    background-image: url('../images/about.jpg');
+}
+
+/* Style the paragraphs inside the jumbotron */
+.jumbotron p {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Style the "Contact Us" button inside the jumbotron */
+.jumbotron a.btn {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+    background-color:white;
+    color:black;
+    font-family:Bahnschrift;
+    border:none;
+}
+/*Doesnt Work Why*/
+.jumbotron.bg-image.bg-lock {
+    background-image: url("{{ url_for('static', filename='images/Lock.jpg') }}");
+    height:450px;
+}
+
+
+.container .btn {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+    background-color: black;
+    color: white;
+    font-family: Bahnschrift;
+    border: none;
+}
+.container .inverted {
+    font-size: 18px;
+   /* margin-top: 20px; */
+    background-color: white;
+    color: black;
+    font-family: Bahnschrift;
+    border: none;
+}
+.vl {
+    border: 0.5px solid #ececec;
+    height: 100%;
+}
+
+.vr {
+    border-right: 0.5px solid #ececec;
+    height:100%
+}
+.vll {
+    border-left: 0.5px solid #ececec;
+    height:100%;
+    padding-left:35px;
+}
+
+.linkspecial {
+    color: #999999;
+    text-decoration: none;
+    font-family: Bahnschrift;
+}
+    .linkspecial:hover {
+        color: white;
+        font-family: 'Roboto Slab';
+    }
+.container p.title-small {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 3px;
+
+}
+.container p.title-large {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: justify;
+    padding-bottom: 3px;
+}
+.contact-class{
+    padding-left:50px;
+}
+.info-light{
+    color:black;
+    text-align:left;
+    padding-inline:3px;
+}
+
+.catch-phrase{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.catch-title {
+    padding-top: 0px;
+    padding-bottom: 15px;
+    margin-top:-5px;
+}
+.box {
+    backdrop-filter : blur(25px);
+    /*height:10%;*/
+    width:100%;
+    /*background-color:deeppink;*/
+
+}
+.box-blurred {
+    backdrop-filter: blur(15px);
+    /*height:10%;*/
+    
+    /*background-color:deeppink;*/
+}
+
+.carousel .item {
+    height: 50vmin;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*min-height: 500px;*/
+}
+
+svg.bi.bi-instagram {
+    padding-top: 2px;
+}
+.navbar-inverse {
+    background-color: black;
+    border-color: #080808
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: absolute;
+}
+.answer{
+    color:black;
+    text-align:justify;
+    font-size:large;
+}

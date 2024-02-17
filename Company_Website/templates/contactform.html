@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <!-- Include CSS files or styles here -->
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.name.label }}
+            {{ form.name(class_='form-control') }}
+        </div>
+        <div>
+            {{ form.email.label }}
+            {{ form.email(class_='form-control') }}
+        </div>
+        <div>
+            {{ form.subject.label }}
+            {{ form.subject(class_='form-control') }}
+        </div>
+        <div>
+            {{ form.message.label }}
+            {{ form.message(class_='form-control') }}
+        </div>
+        <button type="submit" class="btn btn-primary">{{ form.submit.label }}</button>
+    </form>
+</body>
+</html>

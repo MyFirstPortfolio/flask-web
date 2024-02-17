@@ -1,0 +1,68 @@
+    {% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron bg-image text-center" , style="background-image: url({{url_for('static', filename='images/contactus_bg.jpg')}}); background-size: cover; background-repeat: no-repeat;">
+    <div class="container" style="width:50%">
+        <div class="box" style="height:50%">
+            <h1> <u>Contact Us!</u></h1>
+        </div>
+    </div>
+</div>
+        <div class="row" style="margin-top:80px">
+            <div class=" col-sm-8 vl">
+                <h1 id="start_contact_form">CONTACT FORM </h1>
+                {% if success %}
+                <p>Thank you for your message. We'll get back to you shortly.</p>
+                <p> <a href="contact" class="btn btn-info btn-Large">Return</a></p>
+                {% else %}
+                {% for message in form.name.errors %}
+                <div class="flash">{{ message }}</div>
+                {% endfor %}
+                {% for message in form.email.errors %}
+                <div class="flash">{{ message }}</div>
+                {% endfor %}
+                {% for message in form.subject.errors %}
+                <div class="flash">{{ message }}</div>
+                {% endfor %}
+                {% for message in form.message.errors %}
+                <div class="flash">{{ message }}</div>
+                {% endfor %}
+
+                <form action="{{ url_for('contact') }}" method="post">
+                    {{ form.hidden_tag() }}
+                    {{ form.name.label() }}
+                    {{ form.name(class_='form-control form-container') }}
+                    {{ form.email.label }}
+                    {{ form.email(class_='form-control form-container') }}
+                    {{ form.subject.label }}
+                    {{ form.subject(class_='form-control form-container') }}
+                    {{ form.message.label }}
+                    {{ form.message(class_='form-control form-container') }}
+                    {{ form.submit() }}
+                </form>
+
+                {% endif %}
+
+            </div>
+
+            <div class="col-sm-4 contact-class pt-sm-5">
+                <p class="title-large">WHERE TO FIND US</p>
+                <p class="info-light">We are available to conctact online using Whatsapp, Instagram and Email and we will respond to you as soon as possible.</p>
+
+
+                <p class="title-small">WORKING HOURS </p>
+                <p class="info-light">0900 - 1700 EAT (UTC +3) from Monday to Friday</p>
+                <p class="info-light">0900 - 1300 EAT (UTC +3) on Weekends</p>
+
+                <p class="title-small">CONTACT INFORMATION</p>
+                <p class="info-light">alphanerds.contact@gmail.com</p>
+                <p class="info-light">+255 744 037 902</p>
+
+                <p class="title-small">LINK TO WHATSAPP</p>
+                <img src="../static/images/whatsapp_qr_code.png" style="height: 150px; width: 150px ; text-align:center" class="img-thumbnail img-responsive" />
+            </div>
+        </div>
+
+
+        {% endblock %}

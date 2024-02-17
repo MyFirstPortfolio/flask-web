@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>346d84f7-9029-45cd-9025-18e8e2c8c984</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost/</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>Company-Website</Name>
+    <RootNamespace>Company-Website</RootNamespace>
+    <InterpreterId>MSBuild|Flask compatible|$(MSBuildProjectFullPath)</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Company_Website\forms.py" />
+    <Compile Include="run.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="Company_Website\__init__.py" />
+    <Compile Include="Company_Website\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Company_Website\" />
+    <Folder Include="Company_Website\static\" />
+    <Folder Include="Company_Website\static\content\" />
+    <Folder Include="Company_Website\static\fonts\" />
+    <Folder Include="Company_Website\static\images\" />
+    <Folder Include="Company_Website\static\Policies\" />
+    <Folder Include="Company_Website\static\scripts\" />
+    <Folder Include="Company_Website\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Company_Website\static\images\about.jpg" />
+    <Content Include="Company_Website\static\images\about_bg.jpg" />
+    <Content Include="Company_Website\static\images\adve.jpeg" />
+    <Content Include="Company_Website\static\images\android.jpg" />
+    <Content Include="Company_Website\static\images\application.jpg" />
+    <Content Include="Company_Website\static\images\background-index.jpg" />
+    <Content Include="Company_Website\static\images\blog.jpeg" />
+    <Content Include="Company_Website\static\images\consult.jpg" />
+    <Content Include="Company_Website\static\images\contactus_bg.jpg" />
+    <Content Include="Company_Website\static\images\desktop.jpg" />
+    <Content Include="Company_Website\static\images\ecom.jpg" />
+    <Content Include="Company_Website\static\images\grow2.jpg" />
+    <Content Include="Company_Website\static\images\logo v1.png" />
+    <Content Include="Company_Website\static\images\logo v2.png" />
+    <Content Include="Company_Website\static\images\management.jpg" />
+    <Content Include="Company_Website\static\images\Polished Logo  - withbackgroung.png" />
+    <Content Include="Company_Website\static\images\product showcase.jpg" />
+    <Content Include="Company_Website\static\images\promote.jpg" />
+    <Content Include="Company_Website\static\images\secure.jpg" />
+    <Content Include="Company_Website\static\images\support.jpg" />
+    <Content Include="Company_Website\static\images\training.jpg" />
+    <Content Include="Company_Website\static\images\web.jpg" />
+    <Content Include="Company_Website\static\images\weba.png" />
+    <Content Include="Company_Website\static\images\whatsapp_qr_code.png" />
+    <Content Include="Company_Website\static\images\what_wedo2.jpg" />
+    <Content Include="Company_Website\static\images\what_wedo2.png" />
+    <Content Include="Company_Website\static\images\who.jpg" />
+    <Content Include="Company_Website\static\images\work.jpg" />
+    <None Include="Company_Website\static\scripts\_references.js" />
+    <Content Include="Company_Website\static\scripts\bootstrap.bundle.js.map" />
+    <Content Include="Company_Website\static\scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Company_Website\static\scripts\bootstrap.esm.js.map" />
+    <Content Include="Company_Website\static\scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Company_Website\static\scripts\bootstrap.js" />
+    <Content Include="Company_Website\static\scripts\bootstrap.js.map" />
+    <Content Include="Company_Website\static\scripts\bootstrap.min.js" />
+    <Content Include="Company_Website\static\scripts\bootstrap.min.js.map" />
+    <None Include="Company_Website\static\scripts\jquery.validate-vsdoc.js" />
+    <None Include="Company_Website\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Company_Website\static\scripts\jquery-1.10.2.js" />
+    <Content Include="Company_Website\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="Company_Website\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="Company_Website\static\scripts\jquery.validate.js" />
+    <Content Include="Company_Website\static\scripts\jquery.validate.min.js" />
+    <Content Include="Company_Website\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Company_Website\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Company_Website\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="Company_Website\static\scripts\respond.js" />
+    <Content Include="Company_Website\static\scripts\respond.min.js" />
+    <Content Include="config.py" />
+    <Content Include="app.ini" />
+    <Content Include="Company_Website\static\content\figure.css" />
+    <Content Include="Company_Website\static\content\form2.css" />
+    <Content Include="Company_Website\static\content\form.css" />
+    <Content Include="Company_Website\static\content\jumbotron.css" />
+    <Content Include="Company_Website\static\Policies\Cookie Policy.pdf" />
+    <Content Include="Company_Website\static\Policies\Privacy Policy.pdf" />
+    <Content Include="Company_Website\static\Policies\Terms of Service and Intellectual Property Policy.pdf" />
+    <Content Include="Company_Website\templates\contactform.html" />
+    <Content Include="Company_Website\templates\usmart.html" />
+    <Content Include="Company_Website\templates\work.html" />
+    <Content Include="Company_Website\templates\blog.html" />
+    <Content Include="dev.ini" />
+    <Content Include="requirements.txt" />
+    <Content Include="Company_Website\static\content\bootstrap.css" />
+    <Content Include="Company_Website\static\content\bootstrap.min.css" />
+    <Content Include="Company_Website\static\content\site.css" />
+    <Content Include="Company_Website\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Company_Website\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Company_Website\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Company_Website\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Company_Website\templates\about.html" />
+    <Content Include="Company_Website\templates\contact.html" />
+    <Content Include="Company_Website\templates\index.html" />
+    <Content Include="Company_Website\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="Flask compatible\">
+      <Id>Flask compatible</Id>
+      <Version>3.11</Version>
+      <Description>Flask compatible (Python 3.11 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

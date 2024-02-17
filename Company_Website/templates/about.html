@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron text-center bg-image" , style="background-image: url({{url_for('static', filename='images/about_bg.jpg')}}); background-size:cover; background-repeat: no-repeat">
+    <div class="container" style="width:50%">
+        <div class="box">
+            <h1>Who am I?</h1>
+        </div>
+    </div>
+</div>
+
+    <div class="container text-center catch-phrase ">
+        <h2>Whether you have a specific project in mind or just a spark of an idea, I'm here to help it grow.</h2>
+    </div>
+    <hr />
+
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center">Who I am</h3>
+            <p class="answer">I am a passionate individual with a deep love for technology and a knack for turning concepts into code. As a one-person team , I wear many hats developer, designer, and consultant.</p>
+        </div>
+        <div class="row">
+            <h3 class="text-center">What set me apart</h3>
+            <p class="answer"> What sets me apart is the personalized attention and dedication I bring to each project. I don't just write code; I craft solutions. Every line of code is infused with creativity, every design carefully considered, and every consultation tailored to your unique needs.</p>
+        </div>
+        <div class="row">
+            <h3 class="text-center">My Approach</h3>
+            <p class="answer">
+                Whether you're a startup dreaming big or an individual with a passion project, I'm here to turn your ideas into reality, with a reliable and personal touch.
+            </p>
+        </div>
+
+
+    </div>
+    <hr />
+    <div class="container">
+        <div class=" row text-center">
+            <p>What Alpha Nerd Provides?</p>
+            <h1 class="catch-title">Our Services</h1>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <img src="../static/images/support.jpg" style=" height:150px ; width:150px" class="img-thumbnail img-responsive" />
+                <p class="title-small">Support</p>
+                <p>We ensure seamless app functionality through comprehensive and responsive support services.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="../static/images/management.jpg" style=" height:150px ; width:150px" class="img-thumbnail img-responsive" />
+                <p class="title-small">Management</p>
+                <p>We offer efficient management services, ensuring optimal performance and growth for your app. </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="../static/images/training.jpg" style=" height:150px ; width:150px" class="img-thumbnail img-responsive" />
+                <p class="title-small">Training</p>
+                <p>We offer specialized training programs for the seamless integration and mastery of the apps we develop, ensuring your team maximizes their potential.</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <img src="../static/images/consult.jpg" style=" height:150px; width:150px" class="img-thumbnail img-responsive img-center" />
+                <p class="title-small">Consulting</p>
+                <p>We provide expert consultation services, guiding apps to optimal performance and strategic growth.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="../static/images/application.jpg" style=" height:150px ; width:150px" class="img-thumbnail img-responsive" />
+                <p class="title-small">App Development</p>
+                <p>Crafting cutting-edge solutions, we curate app development, bringing your ideas to life with innovation and precision.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="../static/images/web.jpg" style=" height:150px ; width:150px" class="img-thumbnail img-responsive" />
+                <p class="title-small">Web Development</p>
+                <p>Elevating your online presence, we specialize in comprehensive web development, creating tailored solutions that seamlessly merge functionality with an exceptional user experience.</p>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock %}

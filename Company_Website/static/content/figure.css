@@ -1,0 +1,27 @@
+figure {
+    /*border: 1px #cccccc solid;*/
+    border-bottom:none;
+    /*display:table;*/
+    padding: 4px;
+    margin: auto;
+}
+
+.figure-last {
+    border: 0px #cccccc solid;
+    
+    padding: 4px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-size:30px;
+   caption-side:top;    
+   /*display:table-caption;*/
+    
+}
+
